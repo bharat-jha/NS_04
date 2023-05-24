@@ -1,0 +1,24 @@
+{
+  "name": "ns_04",
+  "version": "1.0.0",
+  "description": "Basic API ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Basic",
+    "API",
+    "in",
+    "nodejs"
+  ],
+  "author": "Bharat Jha",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongodb": "^5.5.0",
+    "path": "^0.12.7"
+  }
+}
