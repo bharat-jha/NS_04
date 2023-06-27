@@ -25,6 +25,8 @@ let x = dbConnect(dbName, 'GN_Mth'); // passing the dbname and table name values
 
 dbConnect(dbName, 'GN_Mth').then((resp) => {
     resp.find().toArray().then((data) => {
+
+
         console.log(data);
     })
 });

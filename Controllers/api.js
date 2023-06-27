@@ -24,7 +24,26 @@ app.post('/', async(req, resp) => {
     } else {
         console.log('Some data Issues ... Kindly check ')
     }
-    results.close;
+
 });
+
+app.put('/', async(req, resp) => {
+    console.log(req.body)
+    let db = await await dbConnect(dbname, tbl);
+    let results = await db.updateMany({ name: req.body.name }, { $set: req.body });
+
+    console.log(results.modifiedCount);
+    if (results.modifiedCount) {
+        console.log(" If " + results.modifiedCount);
+    } else {
+        console.log(" Else " + results.modifiedCount);
+    }
+
+    resp.send("update")
+
+});
+
+
+
 
 app.listen(5000);

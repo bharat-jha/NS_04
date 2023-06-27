@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseOver</title>
+</head>
+
+<body>
+    <h3> Welcome to MouseOver </h3>
+    Name: <input type="text" id="mytext">
+    <script>
+        function show(a) {
+            console.log("Hello World ! I am call Back " + (a));
+        };
+
+        function disp(callBack, a) {
+            console.log("I am Calling function")
+            callBack(a)
+        };
+
+        disp(show, a = 100);
+    </script>
+
+
+</body>
+
+</html>
